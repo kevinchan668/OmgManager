@@ -1,5 +1,21 @@
 # OMGAUDIO Database Research — Consolidated English Overview
 
+## Research map
+
+OmgManager's public research is organized around five complementary compatibility dimensions and a reproducible experimental method.
+
+| Research area | Key article |
+| --- | --- |
+| Database, timestamps, audio protection, firmware and host access | [Multidimensional Compatibility Model](multidimensional-compatibility.md) |
+| Cross-file identities, TREE layouts, historical slots and coordinated writes | [Structural Invariants and Write-Back](structural-invariants.md) |
+| High-fidelity reconstruction and model-specific SonicStage acceptance boundaries | [SonicStage Compatibility Threshold Hypothesis](sonicstage-compatibility-threshold.md) |
+| Later-generation tolerance and S638-based profile reuse | [Generational Tolerance](generational-tolerance.md) |
+| Firmware-created / regenerated NW-HD5 files | [HD5 Dynamic File-Set Evolution](hd5-dynamic-file-set.md) |
+| Device-ID-dependent HD5 MP3 path, unresolved ATRAC, pre-HD5 scope | [Legacy Device Support Boundary](legacy-device-scope.md) |
+| Snapshot comparison, controlled tests and evidence classification | [Research Methodology](research-methodology.md) |
+
+**Core framing:** OmgManager aims to reconstruct Sony's observable behavior with high fidelity, but real compatibility is established by device operation and SonicStage handover. Some unexplained bytes and player-maintained records can differ in accepted cases; Sony's internal validation rules have not been recovered.
+
 ## Scope and evidence levels
 
 This is a **deduplicated English synthesis** of the project's Chinese notes on Sony OMGAUDIO data structures and selected device experiments. It is a technical overview, **not** a full binary-format specification or a claim of universal firmware compatibility.
