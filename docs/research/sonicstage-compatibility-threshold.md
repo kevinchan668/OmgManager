@@ -36,6 +36,30 @@ Thus, the project has experienced a **qualitative threshold phenomenon**, but do
 
 For a new model, the recommended strategy remains to approach the Sony reference as closely as possible, then establish that model's acceptance boundary through controlled, repeatable player and SonicStage tests.
 
+## Observed residual differences: apparently non-critical or externally maintained data
+
+Another important **OmgManager engineering observation** is that successful SonicStage acceptance has been achieved **without OmgManager reproducing or modifying some categories of data**:
+
+- **Player-maintained operation records:** certain records are written or updated by the Walkman itself; OmgManager currently leaves some of these records untouched.
+- **SonicStage-generated variable bytes:** some byte positions differ between apparently comparable SonicStage operations, with values that have not yet been explained. OmgManager does not attempt to reproduce all of these variable values.
+
+These residual differences have coexisted with acceptance in the tested workflows. They are therefore **candidates for data outside the tested compatibility-critical constraints**, but their actual role remains unknown.
+
+**Do not infer that the fields are universally ignored.** Other explanations remain possible: the fields may be evaluated only in specific operations or device states; their relationship with other data may matter more than their literal values; or a given value might be regenerated or replaced by the player or host. The word *variable* describes the observed differences; it does not prove that SonicStage uses a random-number generator.
+
+### Proposed distinction for reverse engineering
+
+| Category | Current treatment | Confidence |
+| --- | --- | --- |
+| Confirmed compatibility-critical structure | Preserve or reproduce in supported workflows | Based on failures/acceptance in specific tests |
+| **Provisionally non-critical residual differences** | Document; do not blindly copy or rewrite | Acceptance observed despite differences, mechanism unknown |
+| Firmware-owned state | Preserve, allow device to maintain where appropriate | Device-specific implementation observations |
+| Unclassified differences | Track and investigate, especially for new models | No established acceptance role |
+
+The compatibility threshold is therefore better viewed as an **unknown set of validation constraints**, potentially dependent on device model, firmware, SonicStage version, operation and history, rather than a global byte-identity score.
+
+**Unknown mechanisms:** the internal checks performed by the Walkman and SonicStage have not been established. We cannot yet determine which residual fields are truly outside the acceptance boundary, which are merely tolerated in a specific scenario, and which are recomputed by Sony software.
+
 ## Reference fidelity vs. functional acceptance
 
 Let the test state of a library be described by four dimensions:
@@ -61,7 +85,7 @@ For a new device model, OmgManager should initially aim to reproduce the referen
 
 1. Capture before/after snapshots from a comparable SonicStage operation.
 2. Align the **logical operation**, source music, device state and baseline database.
-3. Compare the complete data-file inventory and byte-level differences.
+3. Compare the complete data-file inventory and byte-level differences; classify known player-owned records and unexplained variable fields separately, without assuming that they must match.
 4. Identify timestamps and **timestamp batches** using an explicit grouping rule and a sensitivity analysis of the grouping window.
 5. Investigate non-byte-changing files whose timestamps move, and firmware-created or regenerated files.
 6. Bring the implementation closer to the reference, prioritizing unexplained critical differences.
