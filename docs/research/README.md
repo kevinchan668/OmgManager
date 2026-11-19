@@ -76,6 +76,10 @@ Useful validation categories include:
 - post-write read-back on supported models;
 - timestamp records and mode observations for maintenance experiments.
 
+## HD5: Firmware-managed growth of the OMGAUDIO file set
+
+The NW-HD5 can create or regenerate additional classification TREE/GINF files after an initial library is established. OmgManager must distinguish firmware-managed records from files it may safely rebuild; the existence of only 16 DAT files in the HD5 initialization snapshot is not a permanent file-count invariant. See [HD5 dynamic file-set research](hd5-dynamic-file-set.md).
+
 ## 9. Limits and planned documentation
 
 This English overview intentionally consolidates repeated explanations and excludes unpublished application source code, internal translation records and unverified universal claims. More detailed research publications can add sanitized hex samples, record layouts, offsets, test provenance, device firmware, reproducible steps and evidence grades.
