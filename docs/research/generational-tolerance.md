@@ -31,6 +31,10 @@ Other effects could also explain the results: differences in test operations, da
 
 The trend should therefore be evaluated on **matched operations and comparable reference datasets**, not model release year alone.
 
+## Historical scope boundary: devices preceding NW-HD5
+
+The team reports that it examined older Walkman devices but did not continue adaptation because database error tolerance was lower, protection/encryption demands were higher, storage was limited, and some models were difficult to connect to modern PC systems. These factors compounded engineering cost. See [Why pre-HD5 support was not pursued](legacy-device-scope.md). This is a scope rationale based on project experience, not a universally verified statement about all older devices.
+
 ## Why the S638 profile can be a practical baseline
 
 Rather than treating every later Walkman as a wholly different format, OmgManager can test an S638-derived profile as a **candidate baseline**:
