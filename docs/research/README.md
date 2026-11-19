@@ -88,6 +88,10 @@ The project calls this the **SonicStage Compatibility Threshold Hypothesis**: ma
 
 A further engineering observation is that **some later OMGAUDIO-era models appear more tolerant of database differences than earlier devices**. This helps explain why S638-derived handling has been a useful starting point for several later models. The trend is an observed adaptation pattern, not an established Sony firmware rule or proof that every newer device is compatible. Read the [Generational Tolerance Hypothesis and S638 reuse study](generational-tolerance.md).
 
+## Why pre-HD5 device support was not pursued
+
+The OmgManager team also investigated generations preceding the NW-HD5. The reported combination of **stricter database tolerance, greater encryption/protection complexity, limited storage capacity, and difficulties connecting some devices to modern PCs** led to a deliberate scope decision: focus on more practical HD5 and later research targets. This is an engineering trade-off, not a claim that earlier players are fundamentally impossible to support. See the [legacy-device scope study](legacy-device-scope.md).
+
 ## HD5: Firmware-managed growth of the OMGAUDIO file set
 
 The NW-HD5 can create or regenerate additional classification TREE/GINF files after an initial library is established. OmgManager must distinguish firmware-managed records from files it may safely rebuild; the existence of only 16 DAT files in the HD5 initialization snapshot is not a permanent file-count invariant. See [HD5 dynamic file-set research](hd5-dynamic-file-set.md).
