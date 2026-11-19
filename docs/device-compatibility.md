@@ -9,6 +9,10 @@ This table lists device profiles represented in OmgManager V9.3.13. **A profile 
 | NW-S706F | S700-family OMGAUDIO profile | Individual functions and firmware combinations require verification. |
 | NW-HD5 | Early hard-disk Walkman profile | MP3 import is described as supported; ATRAC import is not presently claimed as supported. |
 
+### NW-HD5: boundary-model support
+
+NW-HD5 is a deliberate **technical support boundary** for OmgManager. Its MP3 path uses device-ID-dependent special encryption/protection handling, unlike a generic unprotected MP3 copy. The project's attempt to reconstruct the relevant Sony Shared ATRAC encryption behavior was unsuccessful and was discontinued; **HD5 ATRAC import is not claimed as supported**. Database compatibility, MP3 handling and ATRAC handling must be assessed separately. See [HD5 and early-device scope research](research/legacy-device-scope.md).
+
 ### NW-HD5 dynamic database files
 
 The NW-HD5 firmware can create or regenerate additional TREE/GINF data files after initialization. The initial 16-file snapshot is not a fixed permanent inventory. Database operations must preserve the relationship between these firmware-owned files and `00GTRLST.DAT`. Read the [HD5 dynamic file-set study](research/hd5-dynamic-file-set.md).
