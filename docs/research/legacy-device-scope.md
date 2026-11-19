@@ -13,6 +13,23 @@ Based on the team's engineering experience, support for these earlier generation
 
 These factors combined to create **high reverse-engineering effort with limited practical applicability** for the project's current goals. The decision was therefore to focus available resources on the HD5 and later candidate devices.
 
+## NW-HD5 as the practical boundary device
+
+**Project finding:** the team regards **NW-HD5 as the borderline model** between the earlier, especially costly/protected generation and the more practical devices selected for OmgManager support. It is **included in the project's scope**, but its support is deliberately more limited than that of devices with more tractable audio handling.
+
+Two separate format paths were encountered:
+
+| HD5 audio path | Engineering finding | Current project decision |
+| --- | --- | --- |
+| **MP3** | Requires an HD5-specific protection/encryption step involving a **device ID**. | Retain a special device-aware MP3 handling path; do not equate it with later-model MP3 transfer. |
+| **ATRAC** | The team attempted to reverse engineer relevant **Sony Shared** code to reproduce the ATRAC encryption behavior but did not succeed. | Stop pursuing that encoding/encryption path for now; do not advertise HD5 ATRAC import support. |
+
+The *Sony Shared* reference here preserves the name used in the team's research account; this document does not claim to identify the precise binary, algorithm or complete call chain. These conclusions are reported project-engineering results, not a disclosure or proof of Sony's proprietary cryptographic design.
+
+The HD5 also illustrates why "OMGAUDIO compatible" is not a single binary property: database layout, firmware-owned files, file protection and audio-format-specific transfer requirements are distinct constraints. Partial support for one path does not imply complete support for the other.
+
+**Scope boundary:** the HD5 is the earliest model family the project currently elects to handle, at the edge of practical feasibility. Pre-HD5 research was deprioritized; this does not assert impossibility of adaptation by others or across all historical environments.
+
 ## A scope decision, not a technological impossibility
 
 **Unsupported does not mean impossible to support.** The team is not claiming a fundamental theoretical barrier to pre-HD5 compatibility, nor that every older Sony product is encrypted in the same way or has identical connection restrictions.
