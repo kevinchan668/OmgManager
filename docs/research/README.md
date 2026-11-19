@@ -6,6 +6,7 @@ OmgManager's public research is organized around five complementary compatibilit
 
 | Research area | Key article |
 | --- | --- |
+| **Comprehensive file-by-file DAT/TREE/OMA analysis and record layouts** | **[Consolidated OMGAUDIO File Structures](omgaudio-file-structures.md)** |
 | Database, timestamps, audio protection, firmware and host access | [Multidimensional Compatibility Model](multidimensional-compatibility.md) |
 | Cross-file identities, TREE layouts, historical slots and coordinated writes | [Structural Invariants and Write-Back](structural-invariants.md) |
 | High-fidelity reconstruction and model-specific SonicStage acceptance boundaries | [SonicStage Compatibility Threshold Hypothesis](sonicstage-compatibility-threshold.md) |
