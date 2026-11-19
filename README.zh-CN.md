@@ -19,13 +19,29 @@ OmgManager 是面向部分经典 Sony Network Walkman 的 Windows 桌面应用�
 | 独立音频转码 | 默认支持 MP3 转码；仅配置兼容的 Sony 编码器后开放 ATRAC 编码。 |
 | 数据库维护 | 无需连接实体播放器即可在 PC 上初始化 OMGAUDIO 文件夹，并提供检查、维护及部分 Simple Mode 场景处理。 |
 
-## 截图
+## 界面截图
 
-可查看 [功能截图说明](docs/screenshots.md) 及 [原始截图资料包](https://drive.google.com/file/d/1MAxqb5qpS63dOKp-a4rLRIrddwVUqL5T/view)。截图来自 V9.3.12 界面，当前正式发布的程序版本为 V9.3.13。
+### 主界面 — 音乐库
+
+![OmgManager 音乐库主界面](assets/screenshots/02%20Music%20Library.jpg)
+
+*音乐库主界面。截图采集自 V9.3.12，当前正式发布的应用版本为 V9.3.13。*
+
+### 播放列表、M3U 导入与音乐导出
+
+| 设备播放列表管理 | 播放列表直接编辑 |
+| --- | --- |
+| ![播放列表](assets/screenshots/05%20Playlists.jpg) | ![编辑播放列表](assets/screenshots/08%20Edit%20Playlist%201.jpg) |
+
+| M3U 音乐导入 | 音乐导出 |
+| --- | --- |
+| ![M3U 导入](assets/screenshots/07%20Import%20from%20M3U.jpg) | ![音乐导出](assets/screenshots/12%20Export%20Music.jpg) |
+
+全部 13 张图片按主界面优先的顺序展示在 [完整截图页面](docs/screenshots.md)，包括专辑、艺术家、转码、数据库维护及启动界面。
 
 ## 下载及安装
 
-当前目标公开版本为 **V9.3.13**。发布后请从 [GitHub Releases](https://github.com/kevinchan668/OmgManager/releases) 下载 ZIP，解压后运行 `OmgManager.exe`。运行环境为 Windows 与 .NET Framework 4.8。
+当前正式发布版本为 **V9.3.13**。请从 [GitHub Releases](https://github.com/kevinchan668/OmgManager/releases/tag/v9.3.13) 下载 ZIP，解压后运行 `OmgManager.exe`。运行环境为 Windows 与 .NET Framework 4.8。
 
 **修改、删除、导入或修复之前，请完整备份设备上的 OMGAUDIO 文件夹。**
 
