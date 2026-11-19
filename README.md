@@ -21,11 +21,27 @@ OmgManager is a Windows desktop application for managing OMGAUDIO music librarie
 
 ## Screenshots
 
-The project includes screenshots of the library, albums and artists, playlist management, M3U import, audio conversion, export and database maintenance. See the [feature-by-feature screenshot guide](docs/screenshots.md) and the [original screenshot archive](https://drive.google.com/file/d/1MAxqb5qpS63dOKp-a4rLRIrddwVUqL5T/view). The screenshots were captured from V9.3.12; the published application is V9.3.13.
+### Main interface — Music Library
+
+![OmgManager music library main window](assets/screenshots/02%20Music%20Library.jpg)
+
+*The main music library view. Screenshot captured from V9.3.12; the current binary release is V9.3.13.*
+
+### Playlist editing and M3U import
+
+| Direct playlist management | Edit playlist contents |
+| --- | --- |
+| ![Device playlists](assets/screenshots/05%20Playlists.jpg) | ![Edit a playlist](assets/screenshots/08%20Edit%20Playlist%201.jpg) |
+
+| Import music using M3U | Export music to a PC |
+| --- | --- |
+| ![M3U-based import](assets/screenshots/07%20Import%20from%20M3U.jpg) | ![Music export](assets/screenshots/12%20Export%20Music.jpg) |
+
+Browse the [complete, main-interface-first screenshot gallery](docs/screenshots.md) for all 13 screens, including album and artist views, audio conversion, and database maintenance.
 
 ## Download and install
 
-**Target release: V9.3.13.** Obtain the official ZIP from [GitHub Releases](https://github.com/kevinchan668/OmgManager/releases) **when the release is published**. The desktop application targets Windows and .NET Framework 4.8.
+**Current release: V9.3.13.** Download the official ZIP from [GitHub Releases](https://github.com/kevinchan668/OmgManager/releases/tag/v9.3.13). The desktop application targets Windows and .NET Framework 4.8.
 
 1. Extract the distribution into a writable folder.
 2. Launch `OmgManager.exe`.
