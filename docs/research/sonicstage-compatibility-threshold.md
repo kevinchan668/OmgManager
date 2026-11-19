@@ -60,6 +60,10 @@ The compatibility threshold is therefore better viewed as an **unknown set of va
 
 **Unknown mechanisms:** the internal checks performed by the Walkman and SonicStage have not been established. We cannot yet determine which residual fields are truly outside the acceptance boundary, which are merely tolerated in a specific scenario, and which are recomputed by Sony software.
 
+## Generational tolerance: a further model-dependent pattern
+
+OmgManager's adaptation work indicates that certain later OMGAUDIO devices can accept more differences than some earlier devices, making S638-derived behavior a productive baseline for further profiles. This is a qualitative engineering observation, not a measured release-year-to-tolerance formula. See the [Generational Tolerance Hypothesis](generational-tolerance.md). Device-specific validation remains essential.
+
 ## Reference fidelity vs. functional acceptance
 
 Let the test state of a library be described by four dimensions:
