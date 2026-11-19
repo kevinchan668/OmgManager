@@ -13,15 +13,15 @@ OmgManager is a Windows desktop application for managing OMGAUDIO music librarie
 | Feature | Description |
 | --- | --- |
 | Music library management | Browse tracks, albums and artists; import and remove music in supported OMGAUDIO libraries. |
-| Direct playlist editing | Create, rename, delete, reorder and edit playlists on the device rather than synchronizing through a PC library. |
-| M3U import | Use existing M3U lists to select music for import and build playlists where tracks are available. |
+| Direct playlist editing | Create, rename, delete, reorder and edit playlists on the device; back up and restore playlists through the app's PL format. |
+| M3U import | Import music from existing local M3U lists, or create device playlists from matching library tracks. |
 | Music export | Export compatible tracks from a Walkman to a PC; output depends on source format and protection. |
 | Standalone conversion | MP3 conversion works without connecting a Walkman; ATRAC encoding requires an optional external Sony tool. |
-| Database maintenance | Tools to initialize, inspect and repair some OMGAUDIO library states, with device-specific limitations. |
+| Database maintenance | Initialize an OMGAUDIO folder on a PC without connecting a device, and perform selected library maintenance and repair operations. |
 
 ## Screenshots
 
-The project includes screenshots of the library, albums and artists, playlist management, M3U import, audio conversion, export and database maintenance. The screenshot gallery will be published separately.
+The project includes screenshots of the library, albums and artists, playlist management, M3U import, audio conversion, export and database maintenance. See the [feature-by-feature screenshot guide](docs/screenshots.md) and the [original screenshot archive](https://drive.google.com/file/d/1MAxqb5qpS63dOKp-a4rLRIrddwVUqL5T/view). The screenshots were captured from V9.3.12; the published application is V9.3.13.
 
 ## Download and install
 
