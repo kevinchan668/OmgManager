@@ -1,23 +1,41 @@
 # OmgManager — Sony Walkman OMGAUDIO Manager
 
-**Manage your classic Sony Walkman beyond SonicStage.**
+**Edit playlists directly on your Walkman. Rescue and migrate music libraries. Rebuild OMGAUDIO databases without erasing your collection.**
 
 OmgManager is a Windows desktop application for managing OMGAUDIO music libraries used by selected classic Sony Network Walkman players. It offers direct playlist editing, music import/export, M3U-based workflows, standalone conversion, and database maintenance, alongside research into Sony's proprietary music-library format.
 
 **[简体中文](README.zh-CN.md)** · **[Installation guide](docs/installation.md)** · **[Releases](https://github.com/kevinchan668/OmgManager/releases)** · **[OMGAUDIO research](docs/research/README.md)**
 
-> **Distribution status:** OmgManager V9.3.13 is intended for binary release. The application's source code is **not publicly available at this stage**. This is an independent, unofficial project, not endorsed by Sony.
+> **Distribution status:** OmgManager V9.3.13 is available as a binary release. The application's source code is **not publicly available at this stage**. This is an independent, unofficial project, not endorsed by Sony.
 
-## Features
+## Why OmgManager is different
+
+OmgManager is more than a tool for copying music onto a Walkman. It is designed for **direct management of existing on-device OMGAUDIO libraries**, including playlists that are no longer present in a SonicStage PC library.
+
+### Signature capabilities
+
+| Highlight | What it means in practice |
+| --- | --- |
+| **Edit playlists directly on the player** | Create, rename, delete, reorder and change playlist members **without requiring the same playlist to exist in a local SonicStage library**. Unlike the traditional PC-library-first workflow, the device's existing playlists are the starting point. |
+| **Back up and restore playlists in one operation** | Use OmgManager's **PL playlist format** to export and re-import playlist sets. Particularly useful for devices with many carefully curated playlists. |
+| **Build a device playlist from M3U** | Use an existing M3U playlist to create a device playlist **when the referenced tracks are already present in the Walkman's library**. M3U-based music import is also supported. |
+| **Recover music from OMA containers** | Export supported music from the player's OMA containers back to PC-usable audio formats, subject to codec and protection limitations. Export playlist information as part of a migration workflow. |
+| **Move a collection between different Walkman models** | Export music and playlists from one player, then import them into another supported model, allowing for target-device format and protection requirements. This is a **conversion-and-rebuild workflow**, not a claim that OMGAUDIO folders are interchangeable. |
+| **Reorganize and repair an existing music library** | The application's library rebuild/repair workflow aims to reorganize database records and music files **in place, retaining the music collection**, toward a clean state comparable to initialization followed by one complete import of tracks and playlists. Make a full backup first; behavior is model-dependent. |
+| **Prepare an OMGAUDIO library without connecting a Walkman** | Initialize an OMGAUDIO folder at an arbitrary PC location for offline preparation and research. This does not establish that every created library is valid for every player. |
+| **SonicStage handover research** | In tested workflows, OmgManager-generated changes can be accepted by SonicStage without repair/reinitialization even though every byte and timestamp is not identical to Sony output. The precise acceptance constraints vary by model and remain under study. |
+
+**Why this matters:** SonicStage's usual playlist editing workflow relies on a matching PC-side music library. If only the player retains an old playlist, restoring that exact PC environment may be impractical. OmgManager focuses on managing **the collection that is already on the device**.
+
+## Everyday music-management features
 
 | Feature | Description |
 | --- | --- |
-| Music library management | Browse tracks, albums and artists; import and remove music in supported OMGAUDIO libraries. |
-| Direct playlist editing | Create, rename, delete, reorder and edit playlists on the device; back up and restore playlists through the app's PL format. |
-| M3U import | Import music from existing local M3U lists, or create device playlists from matching library tracks. |
-| Music export | Export compatible tracks from a Walkman to a PC; output depends on source format and protection. |
-| Standalone conversion | MP3 conversion works without connecting a Walkman; ATRAC encoding requires an optional external Sony tool. |
-| Database maintenance | Initialize an OMGAUDIO folder on a PC without connecting a device, and perform selected library maintenance and repair operations. |
+| Library browsing | Browse tracks, artists, albums and playlists in supported OMGAUDIO libraries. |
+| Music import and deletion | Import compatible audio and delete tracks with coordinated database updates. |
+| M3U workflow | Use M3U files for music import or playlist creation where matching tracks exist. |
+| Standalone conversion | Convert audio without connecting a Walkman; MP3 is available by default, while ATRAC encoding needs a separately supplied compatible encoder. |
+| Device-aware database maintenance | Inspect, initialize, rebuild and maintain OMGAUDIO data, with model-specific limitations and backup requirements. |
 
 ## Screenshots
 
