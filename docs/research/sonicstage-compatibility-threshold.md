@@ -21,6 +21,21 @@ The following four levels are a proposed *outcome classification*, not a stateme
 
 **Bidirectional handover** is stronger than a one-time successful reconnect: test OmgManager → SonicStage → OmgManager, including read/write operations, followed by another SonicStage reconnect. A single successful handshake should not be represented as universal bidirectional interoperability.
 
+## Empirical engineering observation: high fidelity and model-dependent acceptance
+
+**Observed in the OmgManager development process:** during iterative reverse engineering, when the reconstructed database and its timestamp behavior became **very close** to the Sony-generated reference, the previously encountered device/SonicStage errors ceased to appear in the tested workflows. Importantly, the degree of fidelity apparently required to reach that stable outcome **differed between device models**.
+
+This supports a **model-dependent compatibility-threshold interpretation**:
+
+- Each device model (and potentially each firmware/host software/operation combination) can have its own acceptance boundary.
+- Progressively reducing byte-structure and timestamp-structure differences has been a practical path to successful handover.
+- The observed transition from errors to acceptance is an engineering finding; the exact threshold values, critical fields, and internal firmware/SonicStage validation mechanisms have **not** been measured or isolated.
+- A high observed match does **not** prove that all differing bytes or timestamps are checked. Some differences may be inconsequential, while a single critical difference may be decisive.
+
+Thus, the project has experienced a **qualitative threshold phenomenon**, but does not claim a universal number, a simple percentage-based acceptance algorithm, or a formal proof of causality.
+
+For a new model, the recommended strategy remains to approach the Sony reference as closely as possible, then establish that model's acceptance boundary through controlled, repeatable player and SonicStage tests.
+
 ## Reference fidelity vs. functional acceptance
 
 Let the test state of a library be described by four dimensions:
