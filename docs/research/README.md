@@ -80,6 +80,8 @@ Useful validation categories include:
 
 During OmgManager engineering, the team observed that device and SonicStage problems disappeared in tested workflows once reconstructed database bytes and timestamp structures approached **very high reference fidelity**. The apparent amount of fidelity needed **varied across device models**. This is an important practical result, but the specific numeric acceptance boundary has not been measured, nor has Sony's internal validation algorithm been established.
 
+A further observation is that some **player-maintained operation records** remain untouched by OmgManager, and some **SonicStage-generated variable bytes** are not reproduced, yet tested handover still succeeds. These differences are *provisionally outside the compatibility-critical constraints* in those workflows; their purpose and Sony's internal checks remain unknown. Variable byte values must not be assumed to be truly random.
+
 The project calls this the **SonicStage Compatibility Threshold Hypothesis**: maximize fidelity to the original output during adaptation, then verify actual device behavior and SonicStage handover. Acceptance does **not** require every byte and timestamp to be identical. Read the [four-level handover model and threshold research](sonicstage-compatibility-threshold.md).
 
 ## HD5: Firmware-managed growth of the OMGAUDIO file set
