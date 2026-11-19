@@ -76,6 +76,12 @@ Useful validation categories include:
 - post-write read-back on supported models;
 - timestamp records and mode observations for maintenance experiments.
 
+## SonicStage compatibility: observed model-dependent thresholds
+
+During OmgManager engineering, the team observed that device and SonicStage problems disappeared in tested workflows once reconstructed database bytes and timestamp structures approached **very high reference fidelity**. The apparent amount of fidelity needed **varied across device models**. This is an important practical result, but the specific numeric acceptance boundary has not been measured, nor has Sony's internal validation algorithm been established.
+
+The project calls this the **SonicStage Compatibility Threshold Hypothesis**: maximize fidelity to the original output during adaptation, then verify actual device behavior and SonicStage handover. Acceptance does **not** require every byte and timestamp to be identical. Read the [four-level handover model and threshold research](sonicstage-compatibility-threshold.md).
+
 ## HD5: Firmware-managed growth of the OMGAUDIO file set
 
 The NW-HD5 can create or regenerate additional classification TREE/GINF files after an initial library is established. OmgManager must distinguish firmware-managed records from files it may safely rebuild; the existence of only 16 DAT files in the HD5 initialization snapshot is not a permanent file-count invariant. See [HD5 dynamic file-set research](hd5-dynamic-file-set.md).
