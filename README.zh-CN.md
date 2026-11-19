@@ -4,7 +4,7 @@
 
 OmgManager 是面向部分经典 Sony Network Walkman 的 Windows 桌面应用，围绕设备的 **OMGAUDIO 音乐数据库**提供音乐导入导出、设备播放列表直接编辑、M3U 工作流、独立音频转码及数据库维护，并公开相关格式研究成果。
 
-**[English](README.md)** · **[版本下载](https://github.com/kevinchan668/OmgManager/releases)** · **[英文 OMGAUDIO 研究](docs/research/README.md)**
+**[English](README.md)** · **[安装说明](docs/installation.md)** · **[版本下载](https://github.com/kevinchan668/OmgManager/releases)** · **[英文 OMGAUDIO 研究](docs/research/README.md)**
 
 > **公开范围：** 本阶段计划提供 V9.3.13 可执行程序和技术文档，**暂不公开应用源代码**。OmgManager 为独立非官方项目，与 Sony 无隶属关系。
 
