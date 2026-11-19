@@ -79,7 +79,7 @@ This project publishes research on the data structures connecting OMA/EA3 audio 
 - **TREE01:** transfer/batch records and observed SonicStage synchronization behavior.
 - **Timestamp and Simple Mode experiments:** why file changes and modification times cannot be reduced to one universal rule.
 
-Read the [consolidated English research overview](docs/research/README.md). Observations, interpretations and unresolved hypotheses are distinguished explicitly.
+Read the [English OMGAUDIO Research Library](docs/research/README.md), including the [five-dimensional compatibility framework](docs/research/multidimensional-compatibility.md), [structural write-back invariants](docs/research/structural-invariants.md), [SonicStage compatibility thresholds](docs/research/sonicstage-compatibility-threshold.md) and [experimental methodology](docs/research/research-methodology.md). Observations, interpretations and unresolved hypotheses are distinguished explicitly.
 
 ## Important limitations
 
