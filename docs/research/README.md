@@ -84,6 +84,10 @@ A further observation is that some **player-maintained operation records** remai
 
 The project calls this the **SonicStage Compatibility Threshold Hypothesis**: maximize fidelity to the original output during adaptation, then verify actual device behavior and SonicStage handover. Acceptance does **not** require every byte and timestamp to be identical. Read the [four-level handover model and threshold research](sonicstage-compatibility-threshold.md).
 
+## Generational tolerance and S638-based profile reuse
+
+A further engineering observation is that **some later OMGAUDIO-era models appear more tolerant of database differences than earlier devices**. This helps explain why S638-derived handling has been a useful starting point for several later models. The trend is an observed adaptation pattern, not an established Sony firmware rule or proof that every newer device is compatible. Read the [Generational Tolerance Hypothesis and S638 reuse study](generational-tolerance.md).
+
 ## HD5: Firmware-managed growth of the OMGAUDIO file set
 
 The NW-HD5 can create or regenerate additional classification TREE/GINF files after an initial library is established. OmgManager must distinguish firmware-managed records from files it may safely rebuild; the existence of only 16 DAT files in the HD5 initialization snapshot is not a permanent file-count invariant. See [HD5 dynamic file-set research](hd5-dynamic-file-set.md).
