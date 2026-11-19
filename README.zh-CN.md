@@ -88,7 +88,7 @@ OmgManager/
 
 项目公开 OMGAUDIO 音乐数据库结构研究，包括 OMA/EA3、ContentKey、TREE 分类树、GPLB/TPLB、TREE22 播放列表、TREE01 传输记录、文件修改时间与 Simple Mode 设备实验。
 
-详细研究资料参阅 [英文研究文献库](docs/research/README.md)，包括 [五维兼容性模型](docs/research/multidimensional-compatibility.md)、[数据库物理结构与写回不变量](docs/research/structural-invariants.md)、[SonicStage 兼容性阈值](docs/research/sonicstage-compatibility-threshold.md)、[实验研究方法](docs/research/research-methodology.md)。文档区分实验观察、工程解释及尚待验证的假设，不将单一机型结论推广为普遍规则。
+已将原始《数据文件结构分析》中的三份 V3 中文资料翻译、去重并整理为 **[英文 OMGAUDIO 数据文件结构研究](docs/research/omgaudio-file-structures.md)**，包含 DAT/OMA 文件职责、字段偏移、分类树、播放列表共享区间及写回约束。其他资料参阅 [英文研究文献库](docs/research/README.md)，包括 [五维兼容性模型](docs/research/multidimensional-compatibility.md)、[数据库物理结构与写回不变量](docs/research/structural-invariants.md)、[SonicStage 兼容性阈值](docs/research/sonicstage-compatibility-threshold.md)、[实验研究方法](docs/research/research-methodology.md)。文档区分实验观察、工程解释及尚待验证的假设，不将单一机型结论推广为普遍规则。
 
 ## 注意事项
 
